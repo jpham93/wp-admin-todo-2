@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // ACTIVATION
+// https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/#activation
 register_activation_hook(
 	__FILE__,
 	'wta2_activate'
@@ -28,6 +29,7 @@ function wta2_activate() {
 }
 
 // DEACTIVATION
+// https://developer.wordpress.org/plugins/plugin-basics/activation-deactivation-hooks/#activation
 register_deactivation_hook(
 	__FILE__,
 	'wta2_deactivate'
@@ -35,4 +37,5 @@ register_deactivation_hook(
 function wta2_deactivate() {
 
 }
+
 
